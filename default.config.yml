@@ -12,64 +12,205 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/HackingGate/dotfiles.git
+dotfiles_repo_version: my-config
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/dotfiles
 dotfiles_files:
+  - .gitconfig
   - .gitignore
   - .inputrc
   - .osx
   - .vimrc
+  - .finicky.js
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - aria2 # downloader
   - autoconf
+  - applesimutils
+  - bash
   - bash-completion
-  - doxygen
+  - carthage # dependency manager for Cocoa
+  - cloudflared
+  - coreutils # GNU File, Shell, and Text utilities
+  # - vitorgalvao/tiny-scripts/cask-repair # for Homebrew Cask
+  - dockutil # Tool for managing dock items
+  # - doxygen
+  - emacs # it's not Vim
+  - ffmpeg # Play, record, convert, and stream audio and video
+  - fish # User-friendly command-line shell
+  - ruby
   - gettext
   - gifsicle
   - git
-  - github/gh/gh
+  - gh # GitHub’s official command line tool
+  - gnu-sed	# gsed
+  - gnu-tar
+  - gnutls
   - go
-  - gpg
-  - httpie
+  # - gpg # Use gpg-suite instead
+  - httpie # HTTP client
+  - imagemagick
+  - librsvg
   - iperf
   - libevent
   - sqlite
   - mcrypt
+  - mpv
+  - mtr
   - nmap
+  - node@10
+  - node@12
+  - node@14
   - node
-  - nvm
+  - proxychains-ng
+  # - nvm
   - php
-  - ssh-copy-id
-  - cowsay
+  - shadowsocks-libev # a secure socks5 proxy
+  # - ssh-copy-id
+  # - cowsay
+  - teamookla/speedtest/speedtest
+  - telnet
+  - tor
+  - trash # replace trash with rm
+  - tree
   - readline
   - openssl
-  - pv
+  - pv # Pipe Viewer
+  - watchman # github/facebook/watchman: Watch files and take action when they change
   - wget
-  - wrk
+  - wix/brew/applesimutils
+  - wrk # a HTTP benchmarking tool
+  - x264
+  - x265
+  - xcodes # better than xcode-install
+  - youtube-dl
+  - zsh
+  - zsync
+  - jq # commandline JSON processor
+  # - sshfs
+  - yasm # Modular BSD reimplementation of NASM
+  - ykman # Yubico manager
+  - ios-deploy
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-versions
+  - homebrew/cask-drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
+  # - android-file-transfer
+  # - brave-browser # Chromium-based
+  - blackhole # Soundflower replacement
+  - charles # web debugging proxy
+  # - cinebench # benchmark software
+  - cloudflare-warp
+  # - dbngin # DB version manager by TablePlus
+  - dictionaries # get Emojipedia
+  - discord
   - docker
-  - dropbox
-  - firefox
-  - google-chrome
-  - handbrake
-  - licecap
-  - sequel-pro
-  - slack
-  - sublime-text
-  - transmit
-  - vagrant
+  # - dropbox
+  - finicky # A macOS app for customizing which browser to start
+  - firefox # secondary browser
+  # - handbrake
+  # - licecap
+  # - sequel-pro
+  # - sublime-text
+  # - transmit
+  # - vagrant
+  - fork # https://git-fork.com/
+  - inkscape
+  - gitup
+  - google-chrome # web debugger
+  - react-native-debugger
+  - gpg-suite
+  # - gray # macOS Mojave light/dark mode
+  - openjdk@11
+  - java11
+  - oracle-jdk
+  - kawa # A better input source switcher for OS X 
+  # - mpv # video player
+  # - iina
+  - onyx # cleaner
+  # - reveal # iOS UI debugger
+  # - smcfancontrol
+  # - istat-menus
+  # - tableplus
+  - tor-browser
+  - townwifi # automize WiFi connect in Japan
+  # - tunnelblick # openvpn
+  - visual-studio-code # vscode
+  - vmware-fusion
+  - wireshark
+  # - xquartz # X11
+  # - android-studio
+  - jetbrains-toolbox
+  - workbench # Seamless, automatic, “dotfile” sync to iCloud.
+  # - soundflower # MacOS system extension that allows applications to pass audio to other applications.
+  # - unshaky
+  # - yubico-yubikey-manager
+  # - react-native-debugger # causes WebStorm break points not hitting
+  - reactotron
+  - lg-onscreen-control
+  - monitorcontrol # https://github.com/the0neyouseek/MonitorControl
+  - intel-power-gadget
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps:
+  # by Apple Inc.
+  - { id: 409201541, name: "Pages" }
+  - { id: 409203825, name: "Numbers" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 408981434, name: "iMovie" }
+  - { id: 1037126344, name: "Apple Configurator 2" }
+  - { id: 497799835, name: "Xcode" }
+  - { id: 1450874784, name: "Transpoter" }
+  - { id: 1496833156, name: "Swift Playgrounds" }
+  # tools
+  - { id: 425424353, name: "The Unarchiver" }
+  - { id: 441258766, name: "Magnet" }
+  - { id: 494803304, name: "WiFi Explorer" }
+  - { id: 924726344, name: "Deliveries" }
+  - { id: 1475494784, name: "PDF Viewer Annotation Expert" }
+  - { id: 1506997025, name: "grsyncx" }
+  - { id: 411643860, name: "DaisyDisk" }
+  - { id: 1437928040, name: "한자공부Q 2" }
+  # privacy
+  - { id: 1504024265, name: "Micro Sniff" }
+  - { id: 1438113612, name: "Max Inspect" }
+  - { id: 1497506650, name: "Yubico Authenticator"}
+  # safari
+  - { id: 1482920575, name: "DuckDuckGo Privacy Essentials" }
+  - { id: 1458969831, name: "JSONPeep" }
+  - { id: 1440147259, name: "AdGuard for Safari" }
+  - { id: 1533805339, name: "Keepa - Price Tracker" }
+  - { id: 1514863337, name: "ImageFinder for Safari" }
+  # life style
+  - { id: 897118787, name: "Shazam" }
+  - { id: 539883307, name: "LINE" }
+  - { id: 485812721, name: "TweetDeck" }
+  - { id: 1482454543, name: "Twitter" }
+  - { id: 1147396723, name: "WhatsApp Desktop" }
+  # dev tools
+  - { id: 1342896380, name: "Hex Fiend" }
+  - { id: 1024640650, name: "CotEditor" }
+  - { id: 1388020431, name: "DevCleaner for Xcode" }
+  - { id: 1504761986, name: "San Fransymbols" }
+  # benchmarks
+  - { id: 425264550, name: "Disk Speed Test" }
+  - { id: 1153157709, name: "Speedtest" }
+  - { id: 530194517, name: "MachineProfile" }
+  - { id: 1438772273, name: "Cinebench" }
+  - { id: 1168254295 , name: "AmorphousDiskMark" }
+  - { id: 1495719766, name: "AmorphousMemoryMark" }
+  # work
+  - { id: 803453959, name: "Slack" }
+  - { id: 1278508951, name: "Trello" }
+  - { id: 1513574319, name: "Glance – Quick Look Plugin" }
+
 mas_email: ""
 mas_password: ""
 
@@ -82,14 +223,25 @@ composer_packages: []
   # - name: drush
   #   state: present # present/absent, default: present
   #   version: "^8.1" # default: N/A
-gem_packages: []
+gem_packages:
+  - bundler
+  - cocoapods # dependency manager for Cocoa
+  - jekyll # static websites eg. GitHub Pages
   # - name: bundler
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
-npm_packages: []
+  - fastlane
+  # - xcode-install
+npm_packages:
+  - webpack
+  - nodemon # automatically restarting the node application when file changes in the directory are detected
   # - name: webpack
   #   state: present # present/absent/latest, default: present
   #   version: "^2.6" # default: N/A
+  - yarn
+  - react-native-cli
+  - expo-cli
+  # - ios-deploy # https://github.com/ios-control/ios-deploy#installation
 pip_packages: []
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present

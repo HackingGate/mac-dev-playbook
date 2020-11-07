@@ -107,11 +107,11 @@ homebrew_cask_apps:
   - blackhole # Soundflower replacement
   - charles # web debugging proxy
   # - cinebench # benchmark software
-  - cloudflare-warp
+  # - cloudflare-warp
   # - dbngin # DB version manager by TablePlus
   - dictionaries # get Emojipedia
   - discord
-  - docker
+  # - docker
   # - dropbox
   - finicky # A macOS app for customizing which browser to start
   - firefox # secondary browser
@@ -122,7 +122,7 @@ homebrew_cask_apps:
   # - transmit
   # - vagrant
   - fork # https://git-fork.com/
-  - inkscape
+  # - inkscape
   - gitup
   - google-chrome # web debugger
   - react-native-debugger
@@ -140,11 +140,11 @@ homebrew_cask_apps:
   # - istat-menus
   # - tableplus
   - tor-browser
-  - townwifi # automize WiFi connect in Japan
+  # - townwifi # automize WiFi connect in Japan
   # - tunnelblick # openvpn
   - visual-studio-code # vscode
-  - vmware-fusion
-  - wireshark
+  # - vmware-fusion
+  # - wireshark
   # - xquartz # X11
   # - android-studio
   - jetbrains-toolbox
@@ -154,9 +154,9 @@ homebrew_cask_apps:
   # - yubico-yubikey-manager
   # - react-native-debugger # causes WebStorm break points not hitting
   - reactotron
-  - lg-onscreen-control
+  # - lg-onscreen-control
   - monitorcontrol # https://github.com/the0neyouseek/MonitorControl
-  - intel-power-gadget
+  # - intel-power-gadget
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:

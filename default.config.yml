@@ -75,6 +75,7 @@ homebrew_installed_packages:
   - trash # replace trash with rm
   - tree
   - readline
+  - openjdk@11 # same as java11
   - openssl
   - pv # Pipe Viewer
   - watchman # github/facebook/watchman: Watch files and take action when they change

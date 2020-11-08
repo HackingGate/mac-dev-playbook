@@ -28,11 +28,10 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - aria2 # downloader
   - autoconf
-  - applesimutils
   - bash
   - bash-completion
   - carthage # dependency manager for Cocoa
-  - cloudflared
+  - cloudflare/cloudflare/cloudflared
   - coreutils # GNU File, Shell, and Text utilities
   # - vitorgalvao/tiny-scripts/cask-repair # for Homebrew Cask
   - dockutil # Tool for managing dock items
@@ -84,7 +83,7 @@ homebrew_installed_packages:
   - wrk # a HTTP benchmarking tool
   - x264
   - x265
-  - xcodes # better than xcode-install
+  - robotsandpencils/made/xcodes # better than xcode-install
   - youtube-dl
   - zsh
   - zsync

@@ -128,8 +128,8 @@ homebrew_cask_apps:
   - react-native-debugger
   - gpg-suite
   # - gray # macOS Mojave light/dark mode
-  - openjdk@11
-  - java11
+  # - openjdk@11
+  # - java11
   - oracle-jdk
   - kawa # A better input source switcher for OS X 
   # - mpv # video player

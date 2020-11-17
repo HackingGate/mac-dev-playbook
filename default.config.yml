@@ -241,6 +241,8 @@ npm_packages:
   - yarn
   - react-native-cli
   - expo-cli
+  - detox # Gray box end-to-end testing and automation framework for mobile apps
+  - lerna # A tool for managing JavaScript projects with multiple packages.
   # - ios-deploy # https://github.com/ios-control/ios-deploy#installation
 pip_packages: []
   # - name: mkdocs

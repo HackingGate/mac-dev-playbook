@@ -104,7 +104,7 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   # - android-file-transfer
   # - brave-browser # Chromium-based
-  - blackhole # Soundflower replacement
+  # - blackhole # Soundflower replacement
   - charles # web debugging proxy
   # - cinebench # benchmark software
   # - cloudflare-warp
